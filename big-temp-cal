@@ -2,10 +2,10 @@ from tkinter import *
 def calculate():
     temp = int(entry.get())
     temp = 9/5*temp+32
-    output_label.configure(text = 'Converted: {:.1f}'.format(temp))
+    output_label.configure(text = 'In Fahrenheit, that is: {:.1f}'.format(temp))
     entry.delete(0,END)
 root = Tk()
-message_label = Label(text='Enter a temperature',
+message_label = Label(text='Enter a temperature in Celsius:',
                       font=('Verdana', 16))
 output_label = Label(font=('Verdana', 16))
 entry = Entry(font=('Verdana', 16), width=4)
